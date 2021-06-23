@@ -160,8 +160,12 @@ if __name__ == "__main__":
   data = db.get_data()
   color = Color()
 
+  print ("Database is ", db)
+  print ("Data is ", db.get_data())
+  print ("Color is ", color)
+  
   # test normalize
-  hist = color.histogram(data.ix[0,0], type='global')
+  hist = color.histogram(data.iloc[0,0], type='global')
   assert hist.sum() - 1 < 1e-9, "normalize false"
 
   # test histogram bins

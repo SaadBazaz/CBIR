@@ -1,5 +1,9 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-150x25.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
+## In this fork...
+- Requirements file for easier installation
+- Sample database: Reduced CIFAR dataset with 100 PNGs per class
+
 ## Intro 
 __This repository contains a CBIR (content-based image retrieval) system__
 

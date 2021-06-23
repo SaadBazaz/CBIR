@@ -24,7 +24,7 @@ class Database(object):
       for root, _, files in os.walk(DB_dir, topdown=False):
         cls = root.split('/')[-1]
         for name in files:
-          if not name.endswith('.jpg'):
+          if not name.endswith('.jpg') and not name.endswith('.png'):
             continue
           img = os.path.join(root, name)
           f.write("\n{},{}".format(img, cls))
